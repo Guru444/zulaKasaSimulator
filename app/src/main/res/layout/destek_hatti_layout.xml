@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/up_arrow"
+    android:orientation="vertical"
+    android:padding="4dp">
+    <TextView
+        android:id="@+id/guruTotalMoney"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:drawablePadding="12dp"
+        android:text="Destek için bizlere ulaşabilirsiniz." />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+    <TextView
+        android:id="@+id/discord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:drawableTop="@drawable/discord"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:padding="12dp"
+        android:text="Destek hattı"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/instagram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:drawableTop="@drawable/instagram"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:padding="12dp"
+        android:text="instagram"
+        android:textSize="10sp" />
+
+</LinearLayout>
+</LinearLayout>

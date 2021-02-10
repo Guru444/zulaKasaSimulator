@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backmain4"
+    android:orientation="vertical"
+    tools:context=".view.kasaOpenView.kasaAcilimi">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="KASA CEKİLİS"
+        android:textColor="#EDFCF9F9"
+        android:textSize="30dp"
+        app:fontFamily="@font/architects_daughter" />
+
+
+    <ImageView
+        android:id="@+id/imageKasa"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/kasaza" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/zulaKullaniciAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:hint="Lütfen Zula kullanıcı adınızı girin"
+            android:inputType="textPersonName"
+            android:textColor="#F8F3F3"
+            android:textColorHighlight="#FAEC5656"
+            android:textColorHint="#FCFAFA"
+            android:textColorLink="#E63737"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/kasaAc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/buttonstylemain2"
+            android:text="KASAYI AÇ" />
+
+    </LinearLayout>
+
+</LinearLayout>

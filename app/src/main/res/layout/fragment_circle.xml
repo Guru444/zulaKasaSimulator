@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:id="@+id/bg"
+    android:elevation="20dp"
+    android:background="@drawable/background_quarter">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableBottom="@drawable/sketchedleftarrow"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:text="DENEME"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:drawableTop="@mipmap/ic_launcher_foreground"
+        android:textStyle="bold" />
+
+
+</FrameLayout>

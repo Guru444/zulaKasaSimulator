@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.aboutUS.ActivityAboutUs">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/up_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="15dp"
+                android:text="HAKKIMIZDA"
+                android:textColor="@color/about_background_dark_color"
+                android:textSize="20sp"
+                app:fontFamily="@font/actor" />
+
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_launcher_foreground"
+                android:fontFamily="@font/architects_daughter"
+                android:gravity="center"
+                android:text="GuruAjans"
+                android:textSize="30sp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/versionName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="V2.2"></TextView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/cardview_shadow_start_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:drawableRight="@drawable/downarrow"
+                    android:fontFamily="@font/actor"
+                    android:gravity="center_vertical"
+                    android:text="ZULA KASA SİMÜLATÖR NEDİR?"
+                    android:textColor="#26384c"></TextView>
+
+                <TextView
+                    android:id="@+id/appDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/adamina"
+                    android:text="Zula kasa simülatör Zula’da ki kasaları satın almadan önce en yakın oranlarla test edebileceğiniz bir platform. Bunun yanı sıra oyunda çıkaramadığınız içerikleri uygulamamızda kasaları açarak çıkarabilir sanal ortamda eğlenebilirsiniz."
+                    android:textColor="@color/browser_actions_title_color"
+                    android:textSize="12sp"
+                    android:visibility="gone"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/cardview_shadow_start_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/game"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:drawableRight="@drawable/downarrow"
+                    android:fontFamily="@font/actor"
+                    android:gravity="center_vertical"
+                    android:text="ZULA KASA SİMÜLATÖR KASA OYUNU NEDİR?"
+                    android:textColor="#26384c"></TextView>
+
+                <TextView
+                    android:id="@+id/gameDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/adamina"
+                    android:text="Zula Kasa Simülatör Kasa Oyunu tamamen zuladan bağımsız olarak Guru Ajans’ın yaptığı bir kasa açma ve katlama simülatör oyunudur. Guru Ajans’ın kendi kasaları olan bu kasaları açarak ZP XP VE GP oranlarınızı arttırabilir ve haftanın sonunda büyük ödülü kazanabilirsiniz."
+                    android:textColor="@color/browser_actions_title_color"
+                    android:textSize="12sp"
+                    android:visibility="gone">
+
+                </TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/cardview_shadow_start_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gamePlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:drawableRight="@drawable/downarrow"
+                    android:fontFamily="@font/actor"
+                    android:gravity="center_vertical"
+                    android:text="ZULA KASA SİMÜLATÖR KASA OYUNU NASIL OYNANIR? "
+                    android:textColor="#26384c"></TextView>
+
+                <TextView
+                    android:id="@+id/gamePlayDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/adamina"
+                    android:text="Uygulamaya kayıt olduğunuz da hesabınızda 1000zp ile başlarsınız. Bu zp ile oyundaki 4 adet zp ile açılabilen kasalardan herhangi birisini açarak içerisinden çıkacak olan “ZP,XP veya GP(GURU PARASI)” ile kasanızı katlayabilir 5000 zp olan zp miktarınızı arttırabilir veya xp miktarınızı arttırabilirsiniz. Ancak dikkat etmeniz gereken bazı unsurlar var. İster tüm paranızla oyunun en pahalı zp ile alınabilen kasası olan “DEMİR KASAYI” açabilir veya en ucuz zp kasası olan “AĞIR KASAYI” açabilirsiniz. Bu tamamen sizin tercihinize bağlı. Oyun burada size bir strateji sunuyor. İster büyük kasaları deneyerek büyük vurgunlar yapabilir ya da küçük kasaları açarak küçük küçük yükselebilirsiniz. Kasanızda zplerinizin bitmemesine dikkat etmelisiniz. Eğer kasanızda herhangi bir kasayı açabilecek kadar zp kalmazsa video izleyerek “100 zp” kazanabiliyorsunuz. Buda size en az zp ile açılabilen “AĞIR KASA” açmanızı sağlıyor. Haftanın sonunda XP sıralamasında 1. olan oyuncu büyük ödülü kazanıyor."
+                    android:textColor="@color/browser_actions_title_color"
+                    android:textSize="12sp"
+                    android:visibility="gone"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/cardview_shadow_start_color" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/discord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:drawableTop="@drawable/discord"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center_horizontal"
+            android:padding="12dp"
+            android:text="Destek hattı"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/instagram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:drawableTop="@drawable/instagram"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center_horizontal"
+            android:padding="12dp"
+            android:text="instagram"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

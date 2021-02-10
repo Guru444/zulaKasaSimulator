@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:id="@+id/zulaNoticeOpen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_custom_background"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/zulaNoticeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/rsz_1bell_1"
+                    android:drawablePadding="14dp"
+                    android:fontFamily="@font/actor"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:textColor="@color/browser_actions_text_color"
+                    android:textSize="14sp"
+                    tools:text="Türkiye Ligi"></androidx.appcompat.widget.AppCompatTextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="end|center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/zulaNoticeAgo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/my_custom_background"
+                        android:drawablePadding="3dp"
+                        android:fontFamily="@font/artifika"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="3dp"
+                        android:text="5 saat önce"
+                        android:textColor="@color/design_default_color_error"
+                        android:textSize="10sp"></androidx.appcompat.widget.AppCompatTextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</layout>

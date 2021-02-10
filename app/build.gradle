@@ -1,0 +1,170 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/'}
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.8, 0.99.99]'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+//noinspection GradleCompatible
+apply plugin: "com.android.application"
+apply plugin: 'com.google.gms.google-services'
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.kasa.zulakasasimulator"
+        minSdkVersion 19
+        targetSdkVersion 29
+        multiDexEnabled true
+        versionCode 21
+        versionName "2.4.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                onesignal_app_id: '858d6881-889f-4864-a739-7afd789d190b',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: '751573551509'
+        ]
+    }
+
+    //Layouta değişken atamaları yapmamızı sağlıyor.
+    dataBinding {
+        enabled = true
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+
+dependencies {
+    implementation 'com.google.android.play:core:1.6.4'
+    def lifeCycleExtensionVersion = '1.1.1'
+    def supportVersion = '28.0.0'
+    def retrofitVersion = '2.3.0'
+    def glideVersion = '4.9.0'
+    def rxJavaVersion = '2.1.1'
+    def roomVersion = '2.2.5'
+    def navVersion = '2.3.0'
+    def preferencesVersion = '1.1.1'
+
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "androidx.appcompat:appcompat:1.1.0"
+    implementation "androidx.constraintlayout:constraintlayout:1.1.3"
+    implementation 'com.google.firebase:firebase-database:16.0.4'
+    testImplementation "junit:junit:4.12"
+    androidTestImplementation "androidx.test.ext:junit:1.1.1"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.2.0"
+    //implementation "com.google.android.gms:play-services-ads:18.3.0"
+    implementation 'com.google.gms:google-services:3.1.1'
+    implementation 'com.google.android.gms:play-services-ads:19.3.0'
+    implementation "com.android.support:support-compat:28.0.0"
+    implementation 'com.google.firebase:firebase-auth:19.3.1'
+    implementation 'com.google.android.gms:play-services-base:16.0.1'
+    implementation 'com.google.firebase:firebase-core:17.1.0'
+    implementation 'com.google.firebase:firebase-database:19.0.0'
+
+    implementation 'com.google.android.gms:play-services-auth:9.4.0'
+    implementation 'com.android.volley:volley:1.1.1'
+
+
+    //MVVM kurulumları
+
+    implementation "android.arch.lifecycle:extensions:$lifeCycleExtensionVersion"
+
+    //Room Implements //Yerel veritabanı ile daha iyi çalışıyordu.
+    implementation "androidx.room:room-runtime:$roomVersion"
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+    //kapt "androidx.room:room-compiler:$roomVersion"
+    implementation "androidx.room:room-ktx:$roomVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0"
+
+    //Navigation - Sayfa geçişlerini daha iyi yapabilmek için
+    implementation "androidx.navigation:navigation-fragment-ktx:$navVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navVersion"
+
+    //Tasarımsal işlemler için
+    implementation "com.google.android.material:material:1.2.1"
+
+    //Veriyi çekme işlemleri için
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+
+    implementation "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxJavaVersion"
+
+    //Görseller için kullanılıyor.
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+
+    //Renk önerileri veren bir kütüphane
+    implementation "com.android.support:palette-v7:$supportVersion"
+    implementation "com.android.support:design:$supportVersion"
+
+    //Kullanıcıların tercihlerini hatırlamak için kullanılan bir kütüphane
+    implementation "androidx.preference:preference:$preferencesVersion"
+
+    //swipe Layout
+    implementation 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1'
+    compile "com.daimajia.swipelayout:library:1.2.0@aar"
+    implementation 'ru.rambler.android:swipe-layout:1.1.0'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    def room_version = "2.2.5"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    // optional - RxJava support for Room
+    implementation "androidx.room:room-rxjava2:$room_version"
+
+    // optional - Guava support for Room, including Optional and ListenableFuture
+    implementation "androidx.room:room-guava:$room_version"
+
+    // optional - Test helpers
+    testImplementation "androidx.room:room-testing:$room_version"
+
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+
+    implementation 'com.android.billingclient:billing:2.1.0'
+
+    implementation 'com.anjlab.android.iab.v3:library:1.0.44'
+
+    implementation 'com.github.Hitomis:CircleMenu:v1.1.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha01'
+    implementation 'com.github.medyo:android-about-page:1.3.1'
+    compile 'com.github.szugyi:Android-CircleMenu:2.0.0'
+    implementation 'eu.dkaratzas:android-inapp-update:1.0.5'
+
+    implementation 'com.onesignal:OneSignal:[3.15.0, 3.99.99]'
+
+
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "751573551509",
+    "firebase_url": "https://zulakasasimulator.firebaseio.com",
+    "project_id": "zulakasasimulator",
+    "storage_bucket": "zulakasasimulator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751573551509:android:1666bf65a11452bb994e9c",
+        "android_client_info": {
+          "package_name": "com.kasa.zulakasasimulator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751573551509-fufs6bnbr8vip3lh8ha4rrmig5p3ums3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kasa.zulakasasimulator",
+            "certificate_hash": "52c3fef10bd7ef4245583f442f674f998af73a44"
+          }
+        },
+        {
+          "client_id": "751573551509-6e3c0vq7knfdthekeh38l5ek4bgt14dg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBch8Z-ZvlvRUbs5o5aK0wj1W9A0XO_Vk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751573551509-6e3c0vq7knfdthekeh38l5ek4bgt14dg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

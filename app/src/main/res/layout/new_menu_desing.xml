@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/openkasa_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:rotation="45"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlBottom1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/background_order_status_product_count">
+
+                    <Button
+                        android:id="@+id/bVio1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/background_order_status_product_count"></Button>
+
+                    <TextView
+                        android:id="@+id/bVio_count1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="DÜELLO"
+                        android:drawableTop="@drawable/swords"
+                        android:rotation="-45"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:textSize="12dip"
+                        android:textColor="#FFFFFF"
+                        android:elevation="100dp"/>
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBottom2"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/background_order_status_product_count">
+
+                    <Button
+                        android:id="@+id/bVio2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/background_order_status_product_count"></Button>
+
+                    <TextView
+                        android:id="@+id/bVio_count2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="KASALAR"
+
+                        android:rotation="-45"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:textSize="12dip"
+                        android:textColor="#FFFFFF"
+                        android:elevation="100dp"/>
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlBottom3"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/background_order_status_product_count">
+
+                    <Button
+                        android:id="@+id/bVio3"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/background_order_status_product_count"></Button>
+
+                    <TextView
+                        android:id="@+id/bVio_count3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="KASA OYUNU"
+                        android:drawableTop="@drawable/gameconsole"
+                        android:rotation="-45"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:textSize="12dip"
+                        android:textColor="#FFFFFF"
+                        android:elevation="100dp"/>
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBottom"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/background_order_status_product_count">
+
+                    <Button
+                        android:id="@+id/bVio"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/background_order_status_product_count"></Button>
+
+                    <TextView
+                        android:id="@+id/bVio_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="HAKKIMIZDA"
+                        android:drawableTop="@drawable/conversation"
+                        android:rotation="-45"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:textSize="12dip"
+                        android:textColor="#FFFFFF"
+                        android:elevation="100dp"/>
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:id="@+id/swipelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="5dp"
+        app:dragEdge="right"
+        app:mode="same_level">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/openModelSheet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Düelloya davet et"
+                android:textColor="@color/design_default_color_error"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadowfile"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/ranked"
+                    style="?attr/actionButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:visibility="gone"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/rankuser"/>
+
+                    <TextView
+                        android:id="@+id/cart_badge"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="7.5dp"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:textColor="@android:color/white"
+                        android:text="1000"
+                        android:fontFamily="@font/adamina"
+                        android:textSize="9sp"/>
+
+                </FrameLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="2dp"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:ellipsize="end"
+                    android:maxLength="15"
+                    android:textColor="@color/about_youtube_color"
+                    android:textSize="14sp"
+                    tools:text="Türkiye Ligi"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/userGURU"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/shadowfile"
+                        android:fontFamily="monospace"
+                        android:gravity="end"
+                        android:padding="10dp"
+                        android:textColor="#2d3436"
+                        android:textSize="14sp"
+                        tools:text="Türkiye Ligi"></androidx.appcompat.widget.AppCompatTextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/browser_actions_bg_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="7dp"
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/userZP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/up_arrow"
+                        android:fontFamily="monospace"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="Deneme"
+                        android:textColor="#2d3436"
+                        android:textSize="14sp"
+                        tools:text="Türkiye Ligi"></androidx.appcompat.widget.AppCompatTextView>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/userXP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/up_arrow"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Deneme"
+                        android:textColor="#2d3436"
+                        android:textSize="14sp"
+                        tools:text="Türkiye Ligi"></androidx.appcompat.widget.AppCompatTextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+</layout>

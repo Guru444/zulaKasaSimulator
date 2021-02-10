@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Zula Kasa Simülatör</string>
+    <string name="e_mail">Mail Adresiniz</string>
+    <string name="password">Şifreniz</string>
+    <string name="cikisyap">Çıkış Yap</string>
+    <string name="kullaniciSil">Kullanıcıyı Sil</string>
+    <string name="passuyari">Şifre çok kısa, en az 6 karakter girin!</string>
+    <string name="admob_banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="sort_types">
+        <item>Name</item>
+        <item>Price</item>
+    </string-array>
+</resources>

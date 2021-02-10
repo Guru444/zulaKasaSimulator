@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:alpha="0.8"
+
+    android:background="@drawable/shadowfilebottom"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/notificationTitle"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/actor"
+        android:drawableLeft="@drawable/rsz_1bell_1"
+        android:drawableRight="@drawable/rsz_1bell_1"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="20dp"
+        android:textSize="18sp"
+        android:text="Yeterince paran kalmamıştır." />
+    <TextView
+        android:id="@+id/notificationDetail"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/actor"
+        android:background="@drawable/background_order_status_product_count"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:text="Yeterince paran kalmamıştır." />
+    <TextView
+        android:id="@+id/notiStatuTime"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:fontFamily="@font/actor"
+        android:drawablePadding="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="ETKİNLİĞE KALAN SÜRE" />
+    <TextView
+        android:id="@+id/notificationTime"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="14sp"
+        android:fontFamily="@font/adamina"
+        android:drawablePadding="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Yeterince paran kalmamıştır." />
+    <Button
+        android:id="@+id/openNoti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_custom"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Etkinliği görüntüle"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

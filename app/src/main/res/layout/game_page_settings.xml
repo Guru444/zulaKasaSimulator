@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="@drawable/up_arrow"
+    android:padding="4dp">
+
+
+    <TextView
+        android:id="@+id/panelKapat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:drawableTop="@drawable/thumbup"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        tools:text="Panel Gizle"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/volumeKapat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:drawableTop="@drawable/volume"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        tools:text="Sesi Kapat"
+        android:textSize="14sp" />
+
+</LinearLayout>

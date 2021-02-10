@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/openkasa_background"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:background="@drawable/background_quarter_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:text="ZULA KASA SİMÜLATÖR"
+                android:textColor="@color/design_default_color_background"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/tienne" />
+
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/rotateMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:rotation="45">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlBottom1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="2px">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/background_quarter_bottom"></Button>
+
+                    <TextView
+                        android:id="@+id/bVio_count1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:drawableTop="@drawable/swords"
+                        android:elevation="100dp"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:rotation="-45"
+                        android:text="DÜELLO"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBottom2"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="2px">
+
+                    <Button
+                        android:id="@+id/magaza"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/background_quarter_bottom"></Button>
+
+                    <TextView
+                        android:id="@+id/bVio_count2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:drawableTop="@drawable/rszkasa2copy"
+                        android:elevation="100dp"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:rotation="-45"
+                        android:text="KASALAR"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlBottom3"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="2px">
+
+                    <Button
+                        android:id="@+id/kasaOyun"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/background_quarter_bottom"></Button>
+
+                    <TextView
+                        android:id="@+id/kasaOyunText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:drawableTop="@drawable/gameconsole"
+                        android:elevation="100dp"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:rotation="-45"
+                        android:text="KASA OYUNU"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBottom"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="2px">
+
+                    <Button
+                        android:id="@+id/hakkimizda"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/background_quarter_bottom"></Button>
+
+                    <TextView
+                        android:id="@+id/bVio_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:drawableTop="@drawable/conversation"
+                        android:elevation="100dp"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:rotation="-45"
+                        android:text="HAKKIMIZDA"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--  <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <androidx.viewpager.widget.ViewPager
+              android:id="@+id/pager"
+              android:alpha="0.8"
+              android:layout_margin="60dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </androidx.viewpager.widget.ViewPager>
+
+      </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <Button
+            android:id="@+id/buttonOld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstylemain2"
+            android:text="ÇEKİLİŞ KASASI" />
+
+        <Button
+            android:id="@+id/magazaOld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buttonstylemain2"
+            android:text="KASALAR" />
+
+        <Button
+            android:id="@+id/kasaOyunOld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buttonstylemain2"
+            android:text="KASA OYUNU" />
+
+    </LinearLayout>-->
+
+
+</LinearLayout>
